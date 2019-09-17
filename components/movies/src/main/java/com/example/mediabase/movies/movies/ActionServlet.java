@@ -14,10 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.mediabase.movies;
+package com.example.mediabase.movies.movies;
 
-import com.example.mediabase.movies.Movie;
-import com.example.mediabase.movies.MoviesBean;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
 

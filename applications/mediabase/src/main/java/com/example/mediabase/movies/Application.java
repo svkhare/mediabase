@@ -1,6 +1,6 @@
-package com.example.mediabase;
+package com.example.mediabase.movies;
 
-import com.example.mediabase.movies.ActionServlet;
+import com.example.mediabase.movies.movies.ActionServlet;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;

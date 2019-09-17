@@ -6,3 +6,5 @@ applications:
   - route: <initials>-mediabase.apps.pcf.paltraining.perficient.com
   services:
   - media-database
+routes:
+  - route: <initials>-mediabase.apps.pcf.paltraining.perficient.

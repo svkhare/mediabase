@@ -7,7 +7,7 @@ applications:
     services:
       - movies-ms-database
   - name: podcasts-ms
-    path: applications/podcasts-ms/build/libs/podcasts-ms-1.0-SNAPSHOT.jar
+    path: applications/podcast-ms/build/libs/podcast-ms-1.0-SNAPSHOT.jar
     routes:
       - route: pal-podcasts-ms.apps.pcf.paltraining.perficient.com
     services:

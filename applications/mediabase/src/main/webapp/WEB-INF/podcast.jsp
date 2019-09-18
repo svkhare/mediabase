@@ -69,7 +69,7 @@
             </tr>
         </thead>
         <tbody>
-            <c:forEach items="${requestScope.podcasts}" var="podcast">
+            <c:forEach items="${requestScope.podcast}" var="podcast">
                 <tr>
                     <td><a href="${podcast.url}">${podcast.title}</a></td>
                     <td> ${podcast.description} </td>

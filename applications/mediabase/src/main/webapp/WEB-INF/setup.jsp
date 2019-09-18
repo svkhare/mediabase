@@ -89,7 +89,7 @@
       <td><b>URL</b></td>
     </tr>
 
-    <c:forEach items="${requestScope.podcasts}" var="podcast">
+    <c:forEach items="${requestScope.podcast}" var="podcast">
       <tr>
         <td>${ podcast.title }</td>
         <td>${ podcast.description }</td>

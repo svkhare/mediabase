@@ -1,13 +1,6 @@
-package com.example.mediabase.movies.podcast;
+package com.example.mediabase.podcastui;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.io.Serializable;
-
-@Entity
-public class Podcast implements Serializable {
+public class PodcastUI {
 
     private static final long serialVersionUID = 1L;
 
@@ -15,17 +8,18 @@ public class Podcast implements Serializable {
     private String description;
     private String url;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    public Podcast() {
-    }
-
-    public Podcast(String title, String description, String url) {
+    public PodcastUI(String title, String description, String url) {
         this.title = title;
         this.description = description;
         this.url = url;
+    }
+
+    public PodcastUI(){
+
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public String getTitle() {
@@ -50,13 +44,5 @@ public class Podcast implements Serializable {
 
     public void setUrl(String url) {
         this.url = url;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 }

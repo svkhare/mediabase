@@ -17,5 +17,5 @@ applications:
     routes:
       - route: pal-mediabase.apps.pcf.paltraining.perficient.com
     env:
-      MOVIES_MS_URL: http://<initials>-movies-ms.apps.pcf.paltraining.perficient.com/movies
-      PODCASTS_MS_URL: http://<initials>-podcasts-ms.apps.pcf.paltraining.perficient.com/podcasts
+      MOVIES_MS_URL: http://pal-movies-ms.apps.pcf.paltraining.perficient.com/movies
+      PODCASTS_MS_URL: http://pal-podcasts-ms.apps.pcf.paltraining.perficient.com/podcasts

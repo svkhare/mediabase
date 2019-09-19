@@ -6,16 +6,17 @@ applications:
       - route: pal-movies-ms.apps.pcf.paltraining.perficient.com
     services:
       - movies-ms-database
+      - service-registry
   - name: podcast-ms
     path: applications/podcast-ms/build/libs/podcast-ms-1.0-SNAPSHOT.jar
     routes:
       - route: pal-podcast-ms.apps.pcf.paltraining.perficient.com
     services:
       - podcast-ms-database
+      - service-registry
   - name: mediabase
     path: applications/mediabase/build/libs/mediabase-1.0-SNAPSHOT.war
     routes:
       - route: pal-mediabase.apps.pcf.paltraining.perficient.com
-    env:
-      MOVIES_MS_URL: http://pal-movies-ms.apps.pcf.paltraining.perficient.com/movies
-      PODCAST_MS_URL: http://pal-podcast-ms.apps.pcf.paltraining.perficient.com/podcast
+    services:
+      - service-registry

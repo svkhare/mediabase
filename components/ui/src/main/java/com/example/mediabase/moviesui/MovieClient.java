@@ -21,6 +21,7 @@ public class MovieClient {
     }
 
     public void create(MovieUI movie) {
+        //System.out.println(moviesURL);
         restOperations.postForEntity(moviesURL, movie, MovieUI.class);
     }
 
@@ -34,7 +35,7 @@ public class MovieClient {
     }
 
     public int count(String field, String key) {
-        String URI = UriComponentsBuilder.fromHttpUrl(moviesURL + "/count")
+        String URI = UriComponentsBuilder.fromUriString(moviesURL + "/count")
                 .queryParam("field", field)
                 .queryParam("key", key)
                 .build().toUriString();

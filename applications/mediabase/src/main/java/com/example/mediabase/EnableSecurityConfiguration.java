@@ -28,6 +28,10 @@ public class EnableSecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().anyRequest().authenticated();
     }
 
-
+    @LoadBalanced
+    @Bean
+    public RestOperations restOperations(OAuth2ProtectedResourceDetails resourceDetails, OAuth2ClientContext oauth2ClientContext) {
+        return new OAuth2RestTemplate(resourceDetails, oauth2ClientContext);
+    }
 
 }

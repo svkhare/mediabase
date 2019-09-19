@@ -10,6 +10,7 @@ import org.springframework.security.oauth2.client.OAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails;
 import org.springframework.web.client.RestOperations;
+import org.springframework.web.client.RestTemplate;
 
 @EnableWebSecurity
 @Configuration
@@ -22,8 +23,8 @@ public class DisableSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @LoadBalanced
     @Bean
-    public RestOperations restOperations(OAuth2ProtectedResourceDetails resourceDetails, OAuth2ClientContext oauth2ClientContext) {
-        return new OAuth2RestTemplate(resourceDetails, oauth2ClientContext);
+    public RestOperations restOperations() {
+        return new RestTemplate();
     }
 
 }

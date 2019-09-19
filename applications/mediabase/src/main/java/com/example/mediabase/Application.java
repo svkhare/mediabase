@@ -14,6 +14,7 @@ import com.example.mediabase.moviesui.ActionServlet;
 import com.example.mediabase.moviesui.MovieClient;
 import com.example.mediabase.podcastui.PodcastClient;
 
+
 @EnableCircuitBreaker
 @EnableEurekaClient
 @SpringBootApplication

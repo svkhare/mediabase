@@ -26,6 +26,7 @@ public class PodcastClient {
     }
 
     public void create(PodcastUI podcast) {
+        System.out.println("PIECE OF SHIT!!:"+podcastURL);
         restOperations.postForEntity(podcastURL, podcast, PodcastUI.class);
     }
 

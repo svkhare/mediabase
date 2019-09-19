@@ -8,10 +8,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
-
+@EnableResourceServer
 @Configuration
-//@ConditionalOnProperty(value = "enable-oauth", matchIfMissing = true)
-@ConditionalOnProperty(value="enable-oauth", havingValue = "false")
+@ConditionalOnProperty(value = "enable-oauth", matchIfMissing = true)
+//@ConditionalOnProperty(value="enable-oauth", havingValue = "false")
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class EnableSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
